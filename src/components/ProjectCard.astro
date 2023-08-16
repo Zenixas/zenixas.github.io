@@ -3,7 +3,7 @@ import type { Project } from "@/data/projects";
 
 type Props = Project;
 
-const { title, techs, link, isComingSoon, description } = Astro.props;
+const { title, techs, link, isComingSoon, description, website } = Astro.props;
 
 const formatTechs = (values: string[]) =>
   values.toString().replaceAll(",", " • ");
@@ -37,6 +37,8 @@ const formatTechs = (values: string[]) =>
           <p class="text-neutral-100">{title}</p>
           <p style={{ color: '#f97316' }}>{formatTechs(techs)}</p> {/* Changed color */}
         </div>
+        <div style="display: flex; align-items: center;">
+          <p style="margin-right: 10px; text-decoration: underline;">{website}</p>
         <svg
           width="18"
           height="18"
@@ -56,6 +58,7 @@ const formatTechs = (values: string[]) =>
             stroke-linecap="round"
             stroke-linejoin="round"
           />
+        </div>
         </svg>
       </div>
       <p>{description}</p>
