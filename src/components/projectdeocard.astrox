@@ -18,7 +18,7 @@ const formatTechs = (values: string[]) =>
   >
     <p class="text-neutral-100">{title}</p>
     <div class="flex flex-row items-center gap-4">
-      <p style={{ color: '#f97316' }}>{formatTechs(techs)}</p> {/* Changed color */}
+      <p style={{ color: '#2DDE98' }}>{formatTechs(techs)}</p> {/* Changed color */}
     </div>
   </div>
 
@@ -34,7 +34,7 @@ const formatTechs = (values: string[]) =>
       <div class="flex flex-col md:flex-row md:items-center md:gap-4">
         <div>
           <p class="text-neutral-100">{title}</p>
-          <p style={{ color: '#f97316' }}>{formatTechs(techs)}</p> {/* Changed color */}
+          <p style={{ color: '#2DDE98' }}>{formatTechs(techs)}</p> {/* Changed color */}
         </div>
         <p class="w-fit rounded-md bg-neutral-900 px-4 py-1">Soon</p>
       </div>
@@ -52,7 +52,7 @@ const formatTechs = (values: string[]) =>
       <div class="flex flex-col md:flex-row md:items-center gap-4">
         <div>
           <p class="text-neutral-100">{title}</p>
-          <p style={{ color: '#f97316' }}>{formatTechs(techs)}</p> {/* Changed color */}
+          <p style={{ color: '#2DDE98' }}>{formatTechs(techs)}</p> {/* Changed color */}
         </div>
         <svg
           width="18"
